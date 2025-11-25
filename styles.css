@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+.intro {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.05rem;
+    color: #555;
+}
+
+/* States Grid */
+.states-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* State Card */
+.state-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.state-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.state-header {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.state-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.state-content {
+    padding: 25px;
+}
+
+/* GI Info */
+.gi-info h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #f5f7fa;
+    padding-bottom: 10px;
+}
+
+.gi-info ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.gi-info li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+}
+
+.gi-info li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.gi-info strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* QR Code Section */
+.qr-section {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 2px dashed #667eea;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    border: 3px solid white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qr-label {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #667eea;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .states-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .state-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .gi-info h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .state-content {
+        padding: 15px;
+    }
+
+    .qr-code {
+        width: 120px;
+        height: 120px;
+    }
+}
