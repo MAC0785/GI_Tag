@@ -23,7 +23,7 @@
             <!-- Kerala -->
             <div class="state-card" id="kerala">
                 <div class="state-header">
-                    <h2><a href="kerala.html" style="color:white; text-decoration:none;">Kerala</a></h2>
+                    <h2>Kerala</h2>
                 </div>
                 <div class="state-content">
                     <div class="gi-info">
@@ -34,7 +34,6 @@
                             <li><strong>Pokkali Rice</strong> - Unique saline-resistant rice</li>
                             <li><strong>Aranmula Kannadi</strong> - Metal mirror craft</li>
                         </ul>
-                        <a href="kerala.html" class="view-details-btn">View Full Details →</a>
                     </div>
                     <div class="qr-section">
                         <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://mac0785.github.io/GI_Tag/kerala.html&v=2" alt="Kerala GI QR Code" class="qr-code">
@@ -46,7 +45,7 @@
             <!-- Karnataka -->
             <div class="state-card" id="karnataka">
                 <div class="state-header">
-                    <h2><a href="karnataka.html" style="color:white; text-decoration:none;">Karnataka</a></h2>
+                    <h2>Karnataka</h2>
                 </div>
                 <div class="state-content">
                     <div class="gi-info">
@@ -69,7 +68,7 @@
             <!-- Tamil Nadu -->
             <div class="state-card" id="tamilnadu">
                 <div class="state-header">
-                    <h2><a href="tamilnadu.html" style="color:white; text-decoration:none;">Tamil Nadu</a></h2>
+                    <h2>Tamil Nadu</h2>
                 </div>
                 <div class="state-content">
                     <div class="gi-info">
@@ -92,7 +91,7 @@
             <!-- Assam -->
             <div class="state-card" id="assam">
                 <div class="state-header">
-                    <h2><a href="assam.html" style="color:white; text-decoration:none;">Assam</a></h2>
+                    <h2>Assam</h2>
                 </div>
                 <div class="state-content">
                     <div class="gi-info">
@@ -115,7 +114,7 @@
             <!-- Rajasthan -->
             <div class="state-card" id="rajasthan">
                 <div class="state-header">
-                    <h2><a href="rajasthan.html" style="color:white; text-decoration:none;">Rajasthan</a></h2>
+                    <h2>Rajasthan</h2>
                 </div>
                 <div class="state-content">
                     <div class="gi-info">
@@ -138,7 +137,7 @@
             <!-- Madhya Pradesh -->
             <div class="state-card" id="madhyapradesh">
                 <div class="state-header">
-                    <h2><a href="madhyapradesh.html" style="color:white; text-decoration:none;">Madhya Pradesh</a></h2>
+                    <h2>Madhya Pradesh</h2>
                 </div>
                 <div class="state-content">
                     <div class="gi-info">
@@ -161,7 +160,7 @@
             <!-- Bihar -->
             <div class="state-card" id="bihar">
                 <div class="state-header">
-                    <h2><a href="bihar.html" style="color:white; text-decoration:none;">Bihar</a></h2>
+                    <h2>Bihar</h2>
                 </div>
                 <div class="state-content">
                     <div class="gi-info">
@@ -184,7 +183,7 @@
             <!-- Maharashtra -->
             <div class="state-card" id="maharashtra">
                 <div class="state-header">
-                    <h2><a href="maharashtra.html" style="color:white; text-decoration:none;">Maharashtra</a></h2>
+                    <h2>Maharashtra</h2>
                 </div>
                 <div class="state-content">
                     <div class="gi-info">
@@ -207,7 +206,7 @@
             <!-- Uttar Pradesh -->
             <div class="state-card" id="uttarpradesh">
                 <div class="state-header">
-                    <h2><a href="uttarpradesh.html" style="color:white; text-decoration:none;">Uttar Pradesh</a></h2>
+                    <h2>Uttar Pradesh</h2>
                 </div>
                 <div class="state-content">
                     <div class="gi-info">
@@ -230,7 +229,7 @@
             <!-- Odisha -->
             <div class="state-card" id="odisha">
                 <div class="state-header">
-                    <h2><a href="odisha.html" style="color:white; text-decoration:none;">Odisha</a></h2>
+                    <h2>Odisha</h2>
                 </div>
                 <div class="state-content">
                     <div class="gi-info">
@@ -253,7 +252,7 @@
             <!-- Andhra Pradesh -->
             <div class="state-card" id="andhrapradesh">
                 <div class="state-header">
-                    <h2><a href="andhrapradesh.html" style="color:white; text-decoration:none;">Andhra Pradesh</a></h2>
+                    <h2>Andhra Pradesh</h2>
                 </div>
                 <div class="state-content">
                     <div class="gi-info">
@@ -286,10 +285,6 @@
         document.querySelectorAll('.state-card').forEach(card => {
             card.style.cursor = 'pointer';
             card.addEventListener('click', function(e) {
-                // Don't navigate if clicking on a link or button
-                if (e.target.tagName === 'A' || e.target.closest('a')) {
-                    return;
-                }
                 // Get the state name from the card's id
                 const stateId = this.id;
                 if (stateId) {
