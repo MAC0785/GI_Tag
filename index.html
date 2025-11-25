@@ -280,5 +280,23 @@
             <p>&copy; 2025 GI Tags of India. Preserving our cultural heritage.</p>
         </div>
     </footer>
+
+    <script>
+        // Make entire state cards clickable
+        document.querySelectorAll('.state-card').forEach(card => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', function(e) {
+                // Don't navigate if clicking on a link or button
+                if (e.target.tagName === 'A' || e.target.closest('a')) {
+                    return;
+                }
+                // Get the state name from the card's id
+                const stateId = this.id;
+                if (stateId) {
+                    window.location.href = stateId + '.html';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
